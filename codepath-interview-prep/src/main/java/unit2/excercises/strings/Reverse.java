@@ -1,11 +1,10 @@
-package unit2.excercises;
+package unit2.excercises.strings;
 
-public class ReverseString {
+public class Reverse {
 
   public static void main(String[] args) {
     System.out.println(reverseWrong("HOLA"));
     System.out.println(reverseCorrect("HOLA"));
-
   }
 
   /**
@@ -43,7 +42,7 @@ public class ReverseString {
     // create the StringBuffer object
     StringBuffer buffer = new StringBuffer();
     // iterate from the back of the array, each time adding a character to buffer
-    for(int i = string.length - 1; i >= 0; i--) {
+    for (int i = string.length - 1; i >= 0; i--) {
       buffer.append(string[i]);
     }
     return buffer.toString();
